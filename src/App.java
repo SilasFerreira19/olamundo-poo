@@ -3,11 +3,13 @@ public class App {
         Veiculo v_gol = new Veiculo();
         v_gol.capacidadeTanque = 0;
         v_gol.velocidade = 20;
-        v_gol.acelerar();
-        v_gol.acelerar();
-        v_gol.acelerar();
-        v_gol.acelerar();
-        v_gol.acelerar();
+        for (int i = 0;i < 5;i++){
+            v_gol.acelerar();
+    }
+    
+    for (int i = 0;i < 5;i++){
+        v_gol.parar();
+    }
         System.out.println(v_gol.velocidade);
     }
 }
